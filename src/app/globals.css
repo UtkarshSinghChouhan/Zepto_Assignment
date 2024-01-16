@@ -7,3 +7,7 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
+
+.dropdown_tile {
+  @apply cursor-pointer border-b border-b-slate-300 px-3 py-[6px] hover:bg-slate-200 rounded-lg text-base font-medium;
+}
