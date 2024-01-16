@@ -26,7 +26,7 @@ const InputChip = () => {
   return (
     <main className="w-full h-screen flex justify-center">
       {/* Input Chip */}
-      <article className="h-fit mt-20 flex flex-col w-[400px] max-w-[650px]">
+      <article className="h-fit mt-20 flex flex-col min-w-[400px] max-w-[800px]">
         {/* Input Feild with the Chips */}
         <div className="shadow-sm flex gap-5 flex-wrap border border-slate-300 py-2 px-3 rounded-lg">
           {/* Chip Components */}

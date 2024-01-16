@@ -11,8 +11,11 @@ export interface IChip {
 
 const Chip = ({ obj, removeChip, selected, setSelected }: IChip) => {
   return (
-    <div className="flex gap-2 hover:bg-slate-200 items-center bg-slate-100 border border-slate-200 rounded-full px-4 py-2 shadow-sm">
-      <span className=" whitespace-nowrap inline-block text-sm font-medium cursor-default">
+    <div className="overflow-hidden relative flex gap-2 hover:bg-slate-200 items-center bg-slate-100 border border-slate-400 rounded-full px-4 py-2 shadow-sm">
+      <span className="absolute flex items-center justify-center text-white left-0 p-2 w-10 h-10 mr-2 bg-slate-400 rounded-full font-semibold">
+        {obj?.name[0]}
+      </span>
+      <span className="pl-7 whitespace-nowrap inline-block text-sm font-medium cursor-default">
         {obj?.name}
       </span>
       <span
